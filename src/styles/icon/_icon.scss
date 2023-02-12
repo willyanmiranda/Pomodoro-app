@@ -1,0 +1,50 @@
+.settingsIcon {
+  box-sizing: content-box;
+  padding: 1rem;
+}
+
+.settingsIcon path {
+  transition: all 0.2s linear;
+}
+
+@media (hover: hover) {
+  .settingsIcon:hover path {
+    opacity: 1;
+  }
+}
+
+.arrowIcon {
+  box-sizing: content-box;
+  padding: 0.6rem;
+}
+
+.arrowIcon path {
+  transition: all 0.1s linear;
+}
+
+@media (hover: hover) {
+  .arrowIcon:hover path {
+    stroke-opacity: 1;
+  }
+}
+
+.closeIcon {
+  box-sizing: content-box;
+  padding: 1rem;
+}
+
+.closeIcon path {
+  transition: all 0.2s linear;
+}
+
+@media (hover: hover) {
+  .closeIcon:hover path {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .arrowIcon {
+    padding: 0.4rem;
+  }
+}

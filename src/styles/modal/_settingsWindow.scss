@@ -1,0 +1,30 @@
+.settingsWindow {
+    background-color: $color-white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2.5rem;
+  }
+  
+  .settingsWindowHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 3rem 3rem 4rem;
+    border-bottom: 0.1rem solid #e3e1e1;
+  }
+  
+  @media (max-width: 37.5em) {
+    .settingsWindow {
+      top: calc(50% - 4rem);
+      width: 90vw;
+      max-width: 33rem;
+      transform: translate(-50%, -50%);
+    }
+  
+    .settingsWindowHeader {
+      padding: 2rem 2rem 2rem 3rem;
+    }
+  }
+  
