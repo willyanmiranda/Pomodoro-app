@@ -45,6 +45,8 @@ const App = () => {
 
   return (
     <main>
+      <div className='gradient-01'></div>
+      <div className='gradient-02'></div>
       <Logo />
       <TimerSwitch />
       <Timer />

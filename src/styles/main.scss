@@ -98,11 +98,44 @@ h4 {
   padding-left: $letter-spacing-h4;
 }
 
+
+.gradient-01 {
+  position: absolute;
+  width: 404px;
+  height: 800px;
+  left: 0;
+  top: 0;
+  
+  background: rgba(149, 66, 232, 0.35);
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+}
+
+.gradient-02 {
+  margin-top: 200px;
+  position: absolute;
+  width: 300px;
+  height: 438px;
+  top: 0px;
+  right: 0px;
+  
+  background: #7aebfb;
+  filter: blur(190px);
+}
+
 @media (max-width: 37.5em) {
-  :root {
     $font-size-h1: 7rem;
     $font-size-h2: 2rem;
     $font-size-h3: 1.4rem;
     $font-size-h4: 1.2rem;
-  }
+
+    .gradient-01 {
+      width: 0px;
+      height: 0px;
+    }
+
+    .gradient-02 {
+      width: 0px;
+      height: 0px;
+    }
 }

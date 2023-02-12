@@ -26,7 +26,7 @@ const initialState: InitialStateType = {
   totalMinutesActiveTimer: TIMERS.POMODORO.MINUTES,
   timerStatus: TIMER_STATUS.PAUSED,
   selectedFont: FONTS.KUMBH_SANS,
-  selectedColor: COLORS.ORANGE_RED,
+  selectedColor: COLORS.TEAL,
 };
 
 type Settings = {

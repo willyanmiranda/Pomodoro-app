@@ -4,8 +4,8 @@
   height: 48rem;
   display: grid;
   place-items: center;
-  background-image: linear-gradient(to bottom right, #0e112a, #2e325a);
   box-shadow: -5rem -5rem 10rem 0 #272c5a, 5rem 5rem 10rem 0 #121530;
+  background-image: linear-gradient(to bottom right, #0e112a, #2e325a);
   border-radius: 50%;
 }
 
@@ -34,6 +34,7 @@
     width: 34rem;
     height: 34rem;
     margin: 6rem 0 8rem;
+    box-shadow: -5rem -2rem 10rem 0 rgb(149 66 232 / 35%), 2rem 2rem 7rem 0 #008fa3;
   }
 
   .timer {
@@ -43,5 +44,6 @@
 
   .timerValue {
     margin-bottom: 0rem;
+    font-size: 8.5rem;
   }
 }
