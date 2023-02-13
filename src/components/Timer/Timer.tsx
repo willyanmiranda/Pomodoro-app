@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from 'react';
+import { useEffect, useCallback, useState } from 'react';
 import { TIMER_ACTIONS, TIMER_STATUS } from '../../constants';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import {
@@ -8,6 +8,7 @@ import {
 } from '../../store/timerSlice';
 import Button from '../UI/Button';
 import ProgressBar from './ProgressBar';
+import Ringtone from '../../assets/Alarm.mp3';
 
 const Timer = () => {
   const { timerMinutes, timerSeconds, timerStatus, totalMinutesActiveTimer } =
@@ -21,11 +22,20 @@ const Timer = () => {
     if (timerStatus === TIMER_STATUS.FINISHED) return TIMER_ACTIONS.RESTART;
   }, [timerStatus]);
 
+  const [ringtone, setRingtone] = useState(new Audio(Ringtone))
+
   useEffect(() => {
+
     if (timerStatus === TIMER_STATUS.COUNTING) {
       if (timerMinutes === 0 && timerSeconds === 0) {
+        ringtone.play();
+        ringtone.loop = true;
+        console.log('funfou')
         dispatch(changeTimerStatus(TIMER_STATUS.FINISHED));
         return;
+      } else {
+        ringtone.pause();
+        console.log('parou')
       }
 
       let interval = setInterval(() => {

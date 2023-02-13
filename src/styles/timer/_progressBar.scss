@@ -5,11 +5,11 @@
 }
 
 .progressBar circle {
-  $dash-array: 1186px;
+  --dash-array: 1186px;
   stroke: $color-selected;
   stroke-width: 10;
   stroke-linecap: round;
-  stroke-dasharray: $dash-array;
+  stroke-dasharray: var(--dash-array);
   transform-origin: center center;
   transform: rotate(-90deg);
   transition: stroke-dashoffset 1s linear, stroke 0.8s linear;
@@ -17,7 +17,7 @@
 
 @media (max-width: 37.5em) {
   .progressBar circle {
-    $dash-array: 848px;
+    --dash-array: 848px;
   }
 }
   
